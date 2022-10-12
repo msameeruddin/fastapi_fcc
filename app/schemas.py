@@ -20,6 +20,7 @@ class PostUpdate(PostBase):
 class UserBase(BaseModel):
     email: EmailStr
     password: str
+    phone_number: Optional[str] = None
 
 class UserCreate(UserBase):
     pass
